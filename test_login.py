@@ -29,3 +29,5 @@ class TestLogin(object):
             with open('./a.png','rb') as f:
                 allure.attach("错误截图为：",f.read(),allure.attach_type.PNG)
             raise e
+
+
