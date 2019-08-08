@@ -1,0 +1,122 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1565263865976" stop="1565263889113">
+  <name>test_login</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1565263865976" status="failed" stop="1565263877754">
+      <name>TestLogin.test_login[\u5c0f\u7c73-18-172.8]</name>
+      <failure>
+        <message>AssertionError: assert 1 == 2</message>
+        <stack-trace>self = &lt;test_login.TestLogin object at 0x110b60da0&gt;, name = '小米', age = 18, height = 172.8
+
+    @allure.step(title='正在进行登录测试用例')
+    @pytest.mark.parametrize('name,age,height', get_data())
+    def test_login(self, name, age, height):
+        allure.attach("打印参数：", "姓名：{}年龄：{}身高：{}".format(name, age, height))
+        print("name：%s age:%s height:%s" % (name, age, height))
+        try:
+            self.driver=self.lx1.get_driver()
+            assert 1 == 2
+        except Exception as e:
+            if self.driver is not None:
+                self.driver.get_screenshot_as_file('./a.png')
+            with open('./a.png','rb') as f:
+                allure.attach("错误截图为：",f.read(),allure.attach_type.PNG)
+&gt;           raise e
+
+test_login.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;test_login.TestLogin object at 0x110b60da0&gt;, name = '小米', age = 18, height = 172.8
+
+    @allure.step(title='正在进行登录测试用例')
+    @pytest.mark.parametrize('name,age,height', get_data())
+    def test_login(self, name, age, height):
+        allure.attach("打印参数：", "姓名：{}年龄：{}身高：{}".format(name, age, height))
+        print("name：%s age:%s height:%s" % (name, age, height))
+        try:
+            self.driver=self.lx1.get_driver()
+&gt;           assert 1 == 2
+E           assert 1 == 2
+
+test_login.py:25: AssertionError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="5817-MainThread"/>
+        <label name="host" value="liucongdeMacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1565263865978" status="failed" stop="1565263877702">
+          <name>正在进行登录测试用例</name>
+          <title>正在进行登录测试用例</title>
+          <attachments>
+            <attachment source="a8a9a972-b21a-401a-b461-3ac33905e888-attachment.txt" title="打印参数：" type="text/plain"/>
+            <attachment source="2f321c9e-557e-477c-a6c1-107b5241cc48-attachment.png" title="错误截图为：" type="image/png"/>
+          </attachments>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1565263878792" status="failed" stop="1565263889113">
+      <name>TestLogin.test_login[\u5c0f\u72d7-10-173.22]</name>
+      <failure>
+        <message>AssertionError: assert 1 == 2</message>
+        <stack-trace>self = &lt;test_login.TestLogin object at 0x110ba2668&gt;, name = '小狗', age = 10, height = 173.22
+
+    @allure.step(title='正在进行登录测试用例')
+    @pytest.mark.parametrize('name,age,height', get_data())
+    def test_login(self, name, age, height):
+        allure.attach("打印参数：", "姓名：{}年龄：{}身高：{}".format(name, age, height))
+        print("name：%s age:%s height:%s" % (name, age, height))
+        try:
+            self.driver=self.lx1.get_driver()
+            assert 1 == 2
+        except Exception as e:
+            if self.driver is not None:
+                self.driver.get_screenshot_as_file('./a.png')
+            with open('./a.png','rb') as f:
+                allure.attach("错误截图为：",f.read(),allure.attach_type.PNG)
+&gt;           raise e
+
+test_login.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;test_login.TestLogin object at 0x110ba2668&gt;, name = '小狗', age = 10, height = 173.22
+
+    @allure.step(title='正在进行登录测试用例')
+    @pytest.mark.parametrize('name,age,height', get_data())
+    def test_login(self, name, age, height):
+        allure.attach("打印参数：", "姓名：{}年龄：{}身高：{}".format(name, age, height))
+        print("name：%s age:%s height:%s" % (name, age, height))
+        try:
+            self.driver=self.lx1.get_driver()
+&gt;           assert 1 == 2
+E           assert 1 == 2
+
+test_login.py:25: AssertionError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="5817-MainThread"/>
+        <label name="host" value="liucongdeMacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1565263878794" status="failed" stop="1565263889109">
+          <name>正在进行登录测试用例</name>
+          <title>正在进行登录测试用例</title>
+          <attachments>
+            <attachment source="5cab1602-e801-4e5e-875b-d2d74f20fafc-attachment.txt" title="打印参数：" type="text/plain"/>
+            <attachment source="2258dc8e-3d24-4ad5-8b4d-a00b0e43054c-attachment.png" title="错误截图为：" type="image/png"/>
+          </attachments>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
